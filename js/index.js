@@ -12,7 +12,7 @@ window.addEventListener("mousemove", function (e) {
 	parent_div.style.left = (e.clientX - 25)+'px';
 	parent_div.style.top = (e.clientY - 25)+'px';
 
-	if(document.getElementsByClassName('loader-container').length > 300) {
+	if(document.getElementsByClassName('loader-container').length > 400) {
 		document.body.removeChild(to_append)
 	}
 });
