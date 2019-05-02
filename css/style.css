@@ -3,6 +3,9 @@ body {
   overflow-x: hidden;
   background:rgb(167, 186, 244);
   /* cursor:none; */
+  font-family: BillyRegular, Arial, sans-serif;
+  color:white;
+  font-size: 3rem;
 }
 
 p {
@@ -18,16 +21,14 @@ p {
 
 a {
   display:inline;
-  color:white;
-  font-family: BillyRegular, Arial, sans-serif;
-  font-size: 3rem;
   text-decoration: none;
-  margin:1rem;
+  color:white;
   /* transition: color .1s ease-in-out; */
 }
 
 a:hover {
   color:black;
+  /* filter:blur(2px); */
   /* cursor:none; */
 }
 
@@ -41,14 +42,16 @@ ul {
 li {
   list-style: none;
   display:inline-block;
+  margin:.3rem .5rem;
+  /* background:green; */
 }
 
 .loader-container {
   width: 50px;
   height: 50px;
   position: fixed;
-  -moz-animation: scaleUp 3s ease-in-out;
-  -webkit-animation: scaleUp 3s ease-in-out;
+  -moz-animation: scaleUp 20s ease-in-out;
+  -webkit-animation: scaleUp 20s ease-in-out;
   animation: scaleUp 20s ease-in-out;
   -moz-transform: scale(0);
   -ms-transform: scale(0);
@@ -65,23 +68,8 @@ li {
   width: 100%;
 }
 
-@-webkit-keyframes $animationName {
-  50% {
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-}
 @-moz-keyframes scaleUp {
-  50% {
+  8% {
     -moz-transform: scale(0.5);
     -ms-transform: scale(0.5);
     -webkit-transform: scale(0.5);
@@ -96,7 +84,7 @@ li {
   }
 }
 @-ms-keyframes scaleUp {
-  50% {
+  8% {
     -moz-transform: scale(0.5);
     -ms-transform: scale(0.5);
     -webkit-transform: scale(0.5);
@@ -111,7 +99,7 @@ li {
   }
 }
 @keyframes scaleUp {
-  10% {
+  8% {
     -moz-transform: scale(0.5);
     -ms-transform: scale(0.5);
     -webkit-transform: scale(0.5);
@@ -130,9 +118,6 @@ li {
   body {
     margin-left:1rem;
     margin-right:1rem;
-  }
-
-  a {
     font-size: 4.5rem;
   }
 
