@@ -4,7 +4,7 @@ body {
   background:rgb(167, 186, 244);
   /* cursor:none; */
   font-family: BillyRegular, Arial, sans-serif;
-  color:white;
+  color:rgb(221, 215, 249);
   font-size: 3rem;
 }
 
@@ -22,12 +22,12 @@ p {
 a {
   display:inline;
   text-decoration: none;
-  color:white;
+  color:rgb(221, 215, 249);
   /* transition: color .1s ease-in-out; */
 }
 
 a:hover {
-  color:black;
+  color:rgb(236, 235, 254);
   /* filter:blur(2px); */
   /* cursor:none; */
 }
@@ -46,6 +46,17 @@ li {
   /* background:green; */
 }
 
+.screen {
+  position: fixed;
+  width:100vw;
+  height:100vh;
+  background:#a7baf4;
+  z-index: 9999;
+  animation: fade 8s forwards ease-in-out;
+  left:0;
+  pointer-events: none;
+}
+
 .loader-container {
   width: 50px;
   height: 50px;
@@ -58,10 +69,10 @@ li {
   -webkit-transform: scale(0);
   transform: scale(0);
   z-index: -9999;
-
 }
+
 .loader-container .loader {
-  background: white;
+  background: rgb(236, 235, 254);
   border-radius: 100%;
   filter: blur(20px);
   height: 100%;
@@ -114,6 +125,15 @@ li {
   }
 }
 
+@keyframes fade {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @media (min-width:800px) {
   body {
     margin-left:1rem;
@@ -122,6 +142,6 @@ li {
   }
 
   ul {
-    text-align: left;
+    text-align: center;
   }
 }
